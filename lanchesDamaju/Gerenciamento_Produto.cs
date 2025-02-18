@@ -111,5 +111,11 @@ namespace lanchesDamaju
 
             }
         }
+
+        private void buttonVoltar_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.ShowDialog();
+        }
     }
 }

@@ -74,8 +74,7 @@
             this.dataGridViewGerenciamentoCliente.Location = new System.Drawing.Point(45, 144);
             this.dataGridViewGerenciamentoCliente.Name = "dataGridViewGerenciamentoCliente";
             this.dataGridViewGerenciamentoCliente.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridViewGerenciamentoCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridViewGerenciamentoCliente.Size = new System.Drawing.Size(916, 443);
+            this.dataGridViewGerenciamentoCliente.Size = new System.Drawing.Size(787, 443);
             this.dataGridViewGerenciamentoCliente.TabIndex = 6;
             this.dataGridViewGerenciamentoCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGerenciamentoCliente_CellContentClick);
             // 

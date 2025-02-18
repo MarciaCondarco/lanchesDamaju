@@ -51,11 +51,10 @@
             this.dataGridViewGerenciamentoProduto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewGerenciamentoProduto.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewGerenciamentoProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGerenciamentoProduto.Location = new System.Drawing.Point(52, 122);
+            this.dataGridViewGerenciamentoProduto.Location = new System.Drawing.Point(53, 122);
             this.dataGridViewGerenciamentoProduto.Name = "dataGridViewGerenciamentoProduto";
             this.dataGridViewGerenciamentoProduto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridViewGerenciamentoProduto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridViewGerenciamentoProduto.Size = new System.Drawing.Size(989, 407);
+            this.dataGridViewGerenciamentoProduto.Size = new System.Drawing.Size(887, 407);
             this.dataGridViewGerenciamentoProduto.TabIndex = 1;
             // 
             // buttonPesquisarProduto
@@ -86,6 +85,7 @@
             this.buttonVoltar.TabIndex = 4;
             this.buttonVoltar.Text = "Voltar";
             this.buttonVoltar.UseVisualStyleBackColor = true;
+            this.buttonVoltar.Click += new System.EventHandler(this.buttonVoltar_Click);
             // 
             // Gerenciamento_Produto
             // 
