@@ -114,7 +114,7 @@ namespace lanchesDamaju
 
                 pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
-            }
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

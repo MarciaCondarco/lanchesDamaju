@@ -108,6 +108,7 @@
             // 
             // comboBoxCategoria
             // 
+            this.comboBoxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategoria.FormattingEnabled = true;
             this.comboBoxCategoria.Items.AddRange(new object[] {
             "Doces",

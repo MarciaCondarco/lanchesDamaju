@@ -68,11 +68,16 @@
             // 
             // dataGridViewGerenciamentoCliente
             // 
+            this.dataGridViewGerenciamentoCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewGerenciamentoCliente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewGerenciamentoCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGerenciamentoCliente.Location = new System.Drawing.Point(37, 168);
+            this.dataGridViewGerenciamentoCliente.Location = new System.Drawing.Point(45, 144);
             this.dataGridViewGerenciamentoCliente.Name = "dataGridViewGerenciamentoCliente";
-            this.dataGridViewGerenciamentoCliente.Size = new System.Drawing.Size(727, 254);
+            this.dataGridViewGerenciamentoCliente.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridViewGerenciamentoCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridViewGerenciamentoCliente.Size = new System.Drawing.Size(916, 443);
             this.dataGridViewGerenciamentoCliente.TabIndex = 6;
+            this.dataGridViewGerenciamentoCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGerenciamentoCliente_CellContentClick);
             // 
             // label1
             // 
@@ -88,7 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(958, 599);
             this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.buttonRemoverCliente);
             this.Controls.Add(this.buttonPesquisarCliente);

@@ -62,7 +62,7 @@ namespace lanchesDamaju
             if (dataGridViewGerenciamentoCliente.SelectedRows.Count > 0)
             {
                 //ele pega ID do cliente da linha selecionada
-                int produtoID = Convert.ToInt32(dataGridViewGerenciamentoCliente.SelectedRows[0].Cells["id_cliente"].Value);
+                int clienteID = Convert.ToInt32(dataGridViewGerenciamentoCliente.SelectedRows[0].Cells["id_cliente"].Value);
 
                 DialogResult result = MessageBox.Show("Tem certeza que deseja excluir este cliente?", "Confirmar Exclusão", MessageBoxButtons.YesNo);
 
@@ -83,7 +83,7 @@ namespace lanchesDamaju
 
                             using (MySqlCommand cmd = new MySqlCommand(listagem, consulta))
                             {
-                                cmd.Parameters.AddWithValue("id_cliente", produtoID);
+                                cmd.Parameters.AddWithValue("id_cliente", clienteID);
 
                                 int rowsAffected = cmd.ExecuteNonQuery();
                                 if (rowsAffected > 0)
@@ -116,6 +116,11 @@ namespace lanchesDamaju
         {
             Form1 form = new Form1();
             form.ShowDialog();
+        }
+
+        private void dataGridViewGerenciamentoCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
