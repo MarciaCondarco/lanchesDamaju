@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cad_Cliente));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
@@ -148,7 +149,7 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(339, 343);
+            this.buttonSalvar.Location = new System.Drawing.Point(580, 336);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(121, 39);
             this.buttonSalvar.TabIndex = 15;
@@ -158,7 +159,7 @@
             // 
             // buttonLimpar
             // 
-            this.buttonLimpar.Location = new System.Drawing.Point(466, 343);
+            this.buttonLimpar.Location = new System.Drawing.Point(580, 289);
             this.buttonLimpar.Name = "buttonLimpar";
             this.buttonLimpar.Size = new System.Drawing.Size(121, 39);
             this.buttonLimpar.TabIndex = 16;
@@ -168,7 +169,7 @@
             // 
             // buttonVoltar
             // 
-            this.buttonVoltar.Location = new System.Drawing.Point(593, 343);
+            this.buttonVoltar.Location = new System.Drawing.Point(580, 243);
             this.buttonVoltar.Name = "buttonVoltar";
             this.buttonVoltar.Size = new System.Drawing.Size(121, 39);
             this.buttonVoltar.TabIndex = 17;
@@ -178,7 +179,7 @@
             // 
             // pictureBoxImagem
             // 
-            this.pictureBoxImagem.Location = new System.Drawing.Point(436, 135);
+            this.pictureBoxImagem.Location = new System.Drawing.Point(562, 80);
             this.pictureBoxImagem.Name = "pictureBoxImagem";
             this.pictureBoxImagem.Size = new System.Drawing.Size(172, 138);
             this.pictureBoxImagem.TabIndex = 18;
@@ -186,7 +187,7 @@
             // 
             // buttonEscolherFoto
             // 
-            this.buttonEscolherFoto.Location = new System.Drawing.Point(456, 80);
+            this.buttonEscolherFoto.Location = new System.Drawing.Point(580, 28);
             this.buttonEscolherFoto.Name = "buttonEscolherFoto";
             this.buttonEscolherFoto.Size = new System.Drawing.Size(121, 39);
             this.buttonEscolherFoto.TabIndex = 19;
@@ -230,6 +231,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.maskedTextBoxcpf);
             this.Controls.Add(this.maskedTextBoxcep);
@@ -251,6 +255,7 @@
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "Cad_Cliente";
             this.Text = "Cad_Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagem)).EndInit();

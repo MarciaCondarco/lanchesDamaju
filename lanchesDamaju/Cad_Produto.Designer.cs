@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cad_Produto));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
@@ -121,7 +122,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(461, 130);
+            this.pictureBox1.Location = new System.Drawing.Point(529, 76);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(259, 174);
             this.pictureBox1.TabIndex = 11;
@@ -130,7 +131,7 @@
             // 
             // buttonEscolherFoto
             // 
-            this.buttonEscolherFoto.Location = new System.Drawing.Point(521, 88);
+            this.buttonEscolherFoto.Location = new System.Drawing.Point(583, 35);
             this.buttonEscolherFoto.Name = "buttonEscolherFoto";
             this.buttonEscolherFoto.Size = new System.Drawing.Size(146, 35);
             this.buttonEscolherFoto.TabIndex = 12;
@@ -148,7 +149,7 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(356, 383);
+            this.buttonSalvar.Location = new System.Drawing.Point(583, 383);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(126, 52);
             this.buttonSalvar.TabIndex = 14;
@@ -158,7 +159,7 @@
             // 
             // buttonLimpar
             // 
-            this.buttonLimpar.Location = new System.Drawing.Point(503, 383);
+            this.buttonLimpar.Location = new System.Drawing.Point(583, 321);
             this.buttonLimpar.Name = "buttonLimpar";
             this.buttonLimpar.Size = new System.Drawing.Size(126, 52);
             this.buttonLimpar.TabIndex = 15;
@@ -168,7 +169,7 @@
             // 
             // buttonVoltar
             // 
-            this.buttonVoltar.Location = new System.Drawing.Point(645, 383);
+            this.buttonVoltar.Location = new System.Drawing.Point(583, 263);
             this.buttonVoltar.Name = "buttonVoltar";
             this.buttonVoltar.Size = new System.Drawing.Size(126, 52);
             this.buttonVoltar.TabIndex = 16;
@@ -180,6 +181,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 532);
             this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.buttonLimpar);
@@ -195,6 +199,7 @@
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "Cad_Produto";
             this.Text = "Cad_Produto";
             this.Load += new System.EventHandler(this.Cad_Produto_Load);

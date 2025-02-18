@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(174, 18);
+            this.label1.Location = new System.Drawing.Point(307, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(401, 37);
             this.label1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             // buttonPesquisarProduto
             // 
-            this.buttonPesquisarProduto.Location = new System.Drawing.Point(159, 75);
+            this.buttonPesquisarProduto.Location = new System.Drawing.Point(210, 62);
             this.buttonPesquisarProduto.Name = "buttonPesquisarProduto";
             this.buttonPesquisarProduto.Size = new System.Drawing.Size(111, 41);
             this.buttonPesquisarProduto.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // buttonRemoverProduto
             // 
-            this.buttonRemoverProduto.Location = new System.Drawing.Point(310, 75);
+            this.buttonRemoverProduto.Location = new System.Drawing.Point(438, 62);
             this.buttonRemoverProduto.Name = "buttonRemoverProduto";
             this.buttonRemoverProduto.Size = new System.Drawing.Size(111, 41);
             this.buttonRemoverProduto.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             // buttonVoltar
             // 
-            this.buttonVoltar.Location = new System.Drawing.Point(464, 75);
+            this.buttonVoltar.Location = new System.Drawing.Point(678, 62);
             this.buttonVoltar.Name = "buttonVoltar";
             this.buttonVoltar.Size = new System.Drawing.Size(111, 41);
             this.buttonVoltar.TabIndex = 4;
