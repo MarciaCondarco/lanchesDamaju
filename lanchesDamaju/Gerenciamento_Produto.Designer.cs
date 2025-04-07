@@ -51,11 +51,12 @@
             this.dataGridViewGerenciamentoProduto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewGerenciamentoProduto.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewGerenciamentoProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGerenciamentoProduto.Location = new System.Drawing.Point(53, 122);
+            this.dataGridViewGerenciamentoProduto.Location = new System.Drawing.Point(55, 112);
             this.dataGridViewGerenciamentoProduto.Name = "dataGridViewGerenciamentoProduto";
             this.dataGridViewGerenciamentoProduto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewGerenciamentoProduto.Size = new System.Drawing.Size(887, 407);
             this.dataGridViewGerenciamentoProduto.TabIndex = 1;
+            this.dataGridViewGerenciamentoProduto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGerenciamentoProduto_CellContentClick);
             // 
             // buttonPesquisarProduto
             // 
@@ -91,6 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1045, 531);
             this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.buttonRemoverProduto);

@@ -38,11 +38,11 @@
             this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonEscolherFoto = new System.Windows.Forms.Button();
             this.maskedTextBoxValor = new System.Windows.Forms.MaskedTextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonLimpar = new System.Windows.Forms.Button();
             this.buttonVoltar = new System.Windows.Forms.Button();
+            this.buttonEscolherFoto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,16 +129,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // buttonEscolherFoto
-            // 
-            this.buttonEscolherFoto.Location = new System.Drawing.Point(583, 35);
-            this.buttonEscolherFoto.Name = "buttonEscolherFoto";
-            this.buttonEscolherFoto.Size = new System.Drawing.Size(146, 35);
-            this.buttonEscolherFoto.TabIndex = 12;
-            this.buttonEscolherFoto.Text = "Escolher Foto";
-            this.buttonEscolherFoto.UseVisualStyleBackColor = true;
-            this.buttonEscolherFoto.Click += new System.EventHandler(this.buttonEscolherFoto_Click);
-            // 
             // maskedTextBoxValor
             // 
             this.maskedTextBoxValor.Location = new System.Drawing.Point(24, 183);
@@ -177,11 +167,21 @@
             this.buttonVoltar.UseVisualStyleBackColor = true;
             this.buttonVoltar.Click += new System.EventHandler(this.buttonVoltar_Click);
             // 
+            // buttonEscolherFoto
+            // 
+            this.buttonEscolherFoto.Location = new System.Drawing.Point(583, 35);
+            this.buttonEscolherFoto.Name = "buttonEscolherFoto";
+            this.buttonEscolherFoto.Size = new System.Drawing.Size(146, 35);
+            this.buttonEscolherFoto.TabIndex = 12;
+            this.buttonEscolherFoto.Text = "Escolher Foto";
+            this.buttonEscolherFoto.UseVisualStyleBackColor = true;
+            this.buttonEscolherFoto.Click += new System.EventHandler(this.buttonEscolherFoto_Click);
+            // 
             // Cad_Produto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 532);
@@ -220,10 +220,10 @@
         private System.Windows.Forms.RichTextBox richTextBoxDescricao;
         private System.Windows.Forms.ComboBox comboBoxCategoria;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonEscolherFoto;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxValor;
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Button buttonLimpar;
         private System.Windows.Forms.Button buttonVoltar;
+        private System.Windows.Forms.Button buttonEscolherFoto;
     }
 }

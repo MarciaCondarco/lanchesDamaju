@@ -31,7 +31,7 @@ namespace lanchesDamaju
                     consulta.Open();
 
                     //Consulta SQL para selecionar os clientes 
-                    string listagem = "SELECT * FROM tb_produto";
+                    string listagem = "SELECT id_produto, nome, valor, descricao, categoria FROM tb_produto";
 
 
                     //Cria o comando MySql 
@@ -116,6 +116,11 @@ namespace lanchesDamaju
         {
             Form1 form = new Form1();
             form.ShowDialog();
+        }
+
+        private void dataGridViewGerenciamentoProduto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

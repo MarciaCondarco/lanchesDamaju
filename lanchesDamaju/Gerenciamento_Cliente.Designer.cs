@@ -71,7 +71,7 @@
             this.dataGridViewGerenciamentoCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewGerenciamentoCliente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewGerenciamentoCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGerenciamentoCliente.Location = new System.Drawing.Point(45, 144);
+            this.dataGridViewGerenciamentoCliente.Location = new System.Drawing.Point(72, 126);
             this.dataGridViewGerenciamentoCliente.Name = "dataGridViewGerenciamentoCliente";
             this.dataGridViewGerenciamentoCliente.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewGerenciamentoCliente.Size = new System.Drawing.Size(787, 443);
@@ -92,6 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(958, 599);
             this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.buttonRemoverCliente);

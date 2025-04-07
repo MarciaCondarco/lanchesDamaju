@@ -31,7 +31,7 @@ namespace lanchesDamaju
                     consulta.Open();
 
                     //Consulta SQL para selecionar os clientes 
-                    string listagem = "SELECT * FROM tb_cliente";
+                    string listagem = "SELECT id_cliente, nome, senha, email, cep, cpf, numero, telefone FROM tb_cliente";
 
 
                     //Cria o comando MySql 
