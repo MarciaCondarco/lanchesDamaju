@@ -40,5 +40,10 @@ namespace lanchesDamaju
             Gerenciamento_Cliente form = new Gerenciamento_Cliente();
             form.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,7 +60,7 @@ namespace lanchesDamaju
         }
         private void buttonSalvar_Click(object sender, EventArgs e)
         {
-            string conexaoString = "Server=localhost; Port=3306; Database=db_lanchesdamaju; Uid=root; Pwd=;";
+            string conexaoString = "Server=srv1438.hstgr.io; Port=3306; Database=u289366797_db_damaju; Uid=u289366797_Damaju; Pwd=Damaju123&;";
 
 
 

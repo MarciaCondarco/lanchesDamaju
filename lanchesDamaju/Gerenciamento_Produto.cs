@@ -20,7 +20,7 @@ namespace lanchesDamaju
 
         private void buttonPesquisarProduto_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=localhost; Port=3306; Database=db_lanchesdamaju; Uid=root; Pwd=;";
+            string connectionString = "Server=srv1438.hstgr.io; Port=3306; Database=u289366797_db_damaju; Uid=u289366797_Damaju; Pwd=Damaju123&;";
 
             try
             {
@@ -31,7 +31,7 @@ namespace lanchesDamaju
                     consulta.Open();
 
                     //Consulta SQL para selecionar os clientes 
-                    string listagem = "SELECT id_produto, nome, valor, descricao, categoria FROM tb_produto";
+                    string listagem = "SELECT * FROM tb_produtos";
 
 
                     //Cria o comando MySql 
@@ -62,13 +62,13 @@ namespace lanchesDamaju
             if (dataGridViewGerenciamentoProduto.SelectedRows.Count > 0)
             {
                 //ele pega ID do cliente da linha selecionada
-                int produtoID = Convert.ToInt32(dataGridViewGerenciamentoProduto.SelectedRows[0].Cells["id_produto"].Value);
+                int produtoID = Convert.ToInt32(dataGridViewGerenciamentoProduto.SelectedRows[0].Cells["id_produtos"].Value);
 
                 DialogResult result = MessageBox.Show("Tem certeza que deseja excluir este produto?", "Confirmar Exclusão", MessageBoxButtons.YesNo);
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=localhost; Port=3306; Database=db_lanchesdamaju; Uid=root; Pwd=;";
+                    string connectionString = "Server=srv1438.hstgr.io; Port=3306; Database=u289366797_db_damaju; Uid=u289366797_Damaju; Pwd=Damaju123&;";
 
                     try
                     {
@@ -79,11 +79,11 @@ namespace lanchesDamaju
                             consulta.Open();
 
                             //Consulta SQL para selecionar os clientes 
-                            string listagem = "DELETE FROM tb_produto WHERE id_produto = @id_produto";
+                            string listagem = "DELETE FROM tb_produtos WHERE id_produtos = @id_produtos";
 
                             using (MySqlCommand cmd = new MySqlCommand(listagem, consulta))
                             {
-                                cmd.Parameters.AddWithValue("id_produto", produtoID);
+                                cmd.Parameters.AddWithValue("id_produtos", produtoID);
 
                                 int rowsAffected = cmd.ExecuteNonQuery();
                                 if (rowsAffected > 0)

@@ -35,11 +35,11 @@ namespace lanchesDamaju
 
         private void buttonSalvar_Click(object sender, EventArgs e)
         {
-            string conexaoString = "Server=localhost; Port=3306; Database=db_lanchesdamaju; Uid=root; Pwd=;";
+            string conexaoString = "Server=srv1438.hstgr.io; Port=3306; Database=u289366797_db_damaju; Uid=u289366797_Damaju; Pwd=Damaju123&;";
 
 
 
-            string query = "INSERT INTO tb_produto (nome, valor, descricao, categoria, imagem) VALUES " +
+            string query = "INSERT INTO tb_produtos (nome, valor, descrição, categoria, img) VALUES " +
                 "(@nome, @valor, @descricao, @categoria, @imagem)";
 
 

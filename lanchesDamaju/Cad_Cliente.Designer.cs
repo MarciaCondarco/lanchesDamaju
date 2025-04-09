@@ -54,6 +54,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(260, 25);
@@ -64,6 +65,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(22, 80);
             this.label2.Name = "label2";
@@ -73,6 +75,7 @@
             // 
             // textBoxNome
             // 
+            this.textBoxNome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxNome.Location = new System.Drawing.Point(25, 108);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(246, 20);
@@ -80,6 +83,7 @@
             // 
             // textBoxSenha
             // 
+            this.textBoxSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxSenha.Location = new System.Drawing.Point(25, 385);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PasswordChar = '*';
@@ -88,6 +92,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(24, 369);
             this.label3.Name = "label3";
@@ -97,6 +102,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(24, 327);
             this.label4.Name = "label4";
@@ -106,6 +112,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(24, 283);
             this.label5.Name = "label5";
@@ -115,6 +122,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(24, 237);
             this.label6.Name = "label6";
@@ -124,6 +132,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(22, 186);
             this.label7.Name = "label7";
@@ -133,6 +142,7 @@
             // 
             // textBoxEmail
             // 
+            this.textBoxEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxEmail.Location = new System.Drawing.Point(25, 151);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(246, 20);
@@ -140,6 +150,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(22, 135);
             this.label8.Name = "label8";
@@ -149,6 +160,7 @@
             // 
             // buttonSalvar
             // 
+            this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonSalvar.Location = new System.Drawing.Point(580, 336);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(121, 39);
@@ -159,6 +171,7 @@
             // 
             // buttonLimpar
             // 
+            this.buttonLimpar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonLimpar.Location = new System.Drawing.Point(580, 289);
             this.buttonLimpar.Name = "buttonLimpar";
             this.buttonLimpar.Size = new System.Drawing.Size(121, 39);
@@ -169,6 +182,7 @@
             // 
             // buttonVoltar
             // 
+            this.buttonVoltar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonVoltar.Location = new System.Drawing.Point(580, 243);
             this.buttonVoltar.Name = "buttonVoltar";
             this.buttonVoltar.Size = new System.Drawing.Size(121, 39);
@@ -179,6 +193,7 @@
             // 
             // pictureBoxImagem
             // 
+            this.pictureBoxImagem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxImagem.Location = new System.Drawing.Point(562, 80);
             this.pictureBoxImagem.Name = "pictureBoxImagem";
             this.pictureBoxImagem.Size = new System.Drawing.Size(172, 138);
@@ -187,6 +202,7 @@
             // 
             // buttonEscolherFoto
             // 
+            this.buttonEscolherFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonEscolherFoto.Location = new System.Drawing.Point(580, 28);
             this.buttonEscolherFoto.Name = "buttonEscolherFoto";
             this.buttonEscolherFoto.Size = new System.Drawing.Size(121, 39);
@@ -197,6 +213,7 @@
             // 
             // maskedTextBoxTelefone
             // 
+            this.maskedTextBoxTelefone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.maskedTextBoxTelefone.Location = new System.Drawing.Point(25, 346);
             this.maskedTextBoxTelefone.Mask = "(99) 00000-0000";
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
@@ -205,6 +222,7 @@
             // 
             // maskedTextBoxNumero
             // 
+            this.maskedTextBoxNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.maskedTextBoxNumero.Location = new System.Drawing.Point(27, 299);
             this.maskedTextBoxNumero.Mask = "0000";
             this.maskedTextBoxNumero.Name = "maskedTextBoxNumero";
@@ -213,6 +231,7 @@
             // 
             // maskedTextBoxcep
             // 
+            this.maskedTextBoxcep.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.maskedTextBoxcep.Location = new System.Drawing.Point(25, 253);
             this.maskedTextBoxcep.Mask = "00000-999";
             this.maskedTextBoxcep.Name = "maskedTextBoxcep";
@@ -221,6 +240,7 @@
             // 
             // maskedTextBoxcpf
             // 
+            this.maskedTextBoxcpf.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.maskedTextBoxcpf.Location = new System.Drawing.Point(25, 202);
             this.maskedTextBoxcpf.Mask = "000,000,000-00";
             this.maskedTextBoxcpf.Name = "maskedTextBoxcpf";
@@ -257,7 +277,9 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "Cad_Cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cad_Cliente";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

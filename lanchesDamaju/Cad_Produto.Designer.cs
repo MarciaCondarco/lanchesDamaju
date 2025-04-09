@@ -48,9 +48,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(251, 35);
+            this.label1.Location = new System.Drawing.Point(425, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 37);
             this.label1.TabIndex = 0;
@@ -58,8 +59,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 93);
+            this.label2.Location = new System.Drawing.Point(120, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
@@ -67,15 +69,17 @@
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(24, 124);
+            this.textBoxNome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxNome.Location = new System.Drawing.Point(123, 167);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(308, 20);
             this.textBoxNome.TabIndex = 2;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 156);
+            this.label3.Location = new System.Drawing.Point(120, 199);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 3;
@@ -83,8 +87,9 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 219);
+            this.label4.Location = new System.Drawing.Point(120, 262);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 7;
@@ -92,8 +97,9 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 283);
+            this.label5.Location = new System.Drawing.Point(120, 326);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 5;
@@ -101,7 +107,8 @@
             // 
             // richTextBoxDescricao
             // 
-            this.richTextBoxDescricao.Location = new System.Drawing.Point(24, 299);
+            this.richTextBoxDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.richTextBoxDescricao.Location = new System.Drawing.Point(123, 342);
             this.richTextBoxDescricao.Name = "richTextBoxDescricao";
             this.richTextBoxDescricao.Size = new System.Drawing.Size(308, 136);
             this.richTextBoxDescricao.TabIndex = 9;
@@ -109,20 +116,22 @@
             // 
             // comboBoxCategoria
             // 
+            this.comboBoxCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategoria.FormattingEnabled = true;
             this.comboBoxCategoria.Items.AddRange(new object[] {
             "Doces",
             "Salgados",
             "Bebidas"});
-            this.comboBoxCategoria.Location = new System.Drawing.Point(24, 245);
+            this.comboBoxCategoria.Location = new System.Drawing.Point(123, 288);
             this.comboBoxCategoria.Name = "comboBoxCategoria";
             this.comboBoxCategoria.Size = new System.Drawing.Size(308, 21);
             this.comboBoxCategoria.TabIndex = 10;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(529, 76);
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Location = new System.Drawing.Point(751, 138);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(259, 174);
             this.pictureBox1.TabIndex = 11;
@@ -131,7 +140,8 @@
             // 
             // maskedTextBoxValor
             // 
-            this.maskedTextBoxValor.Location = new System.Drawing.Point(24, 183);
+            this.maskedTextBoxValor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.maskedTextBoxValor.Location = new System.Drawing.Point(123, 226);
             this.maskedTextBoxValor.Mask = "$00.00";
             this.maskedTextBoxValor.Name = "maskedTextBoxValor";
             this.maskedTextBoxValor.Size = new System.Drawing.Size(308, 20);
@@ -139,7 +149,8 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(583, 383);
+            this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSalvar.Location = new System.Drawing.Point(805, 445);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(126, 52);
             this.buttonSalvar.TabIndex = 14;
@@ -149,7 +160,8 @@
             // 
             // buttonLimpar
             // 
-            this.buttonLimpar.Location = new System.Drawing.Point(583, 321);
+            this.buttonLimpar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonLimpar.Location = new System.Drawing.Point(805, 383);
             this.buttonLimpar.Name = "buttonLimpar";
             this.buttonLimpar.Size = new System.Drawing.Size(126, 52);
             this.buttonLimpar.TabIndex = 15;
@@ -159,7 +171,8 @@
             // 
             // buttonVoltar
             // 
-            this.buttonVoltar.Location = new System.Drawing.Point(583, 263);
+            this.buttonVoltar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonVoltar.Location = new System.Drawing.Point(805, 325);
             this.buttonVoltar.Name = "buttonVoltar";
             this.buttonVoltar.Size = new System.Drawing.Size(126, 52);
             this.buttonVoltar.TabIndex = 16;
@@ -169,7 +182,8 @@
             // 
             // buttonEscolherFoto
             // 
-            this.buttonEscolherFoto.Location = new System.Drawing.Point(583, 35);
+            this.buttonEscolherFoto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonEscolherFoto.Location = new System.Drawing.Point(805, 97);
             this.buttonEscolherFoto.Name = "buttonEscolherFoto";
             this.buttonEscolherFoto.Size = new System.Drawing.Size(146, 35);
             this.buttonEscolherFoto.TabIndex = 12;
@@ -184,7 +198,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(800, 532);
+            this.ClientSize = new System.Drawing.Size(1131, 618);
             this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.buttonLimpar);
             this.Controls.Add(this.buttonSalvar);
@@ -201,7 +215,9 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "Cad_Produto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cad_Produto";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Cad_Produto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

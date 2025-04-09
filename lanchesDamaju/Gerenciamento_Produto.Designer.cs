@@ -38,9 +38,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(307, 9);
+            this.label1.Location = new System.Drawing.Point(357, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(401, 37);
             this.label1.TabIndex = 0;
@@ -48,10 +49,11 @@
             // 
             // dataGridViewGerenciamentoProduto
             // 
+            this.dataGridViewGerenciamentoProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridViewGerenciamentoProduto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewGerenciamentoProduto.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewGerenciamentoProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGerenciamentoProduto.Location = new System.Drawing.Point(55, 112);
+            this.dataGridViewGerenciamentoProduto.Location = new System.Drawing.Point(94, 144);
             this.dataGridViewGerenciamentoProduto.Name = "dataGridViewGerenciamentoProduto";
             this.dataGridViewGerenciamentoProduto.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewGerenciamentoProduto.Size = new System.Drawing.Size(887, 407);
@@ -60,7 +62,8 @@
             // 
             // buttonPesquisarProduto
             // 
-            this.buttonPesquisarProduto.Location = new System.Drawing.Point(210, 62);
+            this.buttonPesquisarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonPesquisarProduto.Location = new System.Drawing.Point(249, 94);
             this.buttonPesquisarProduto.Name = "buttonPesquisarProduto";
             this.buttonPesquisarProduto.Size = new System.Drawing.Size(111, 41);
             this.buttonPesquisarProduto.TabIndex = 2;
@@ -70,7 +73,8 @@
             // 
             // buttonRemoverProduto
             // 
-            this.buttonRemoverProduto.Location = new System.Drawing.Point(438, 62);
+            this.buttonRemoverProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonRemoverProduto.Location = new System.Drawing.Point(477, 94);
             this.buttonRemoverProduto.Name = "buttonRemoverProduto";
             this.buttonRemoverProduto.Size = new System.Drawing.Size(111, 41);
             this.buttonRemoverProduto.TabIndex = 3;
@@ -80,7 +84,8 @@
             // 
             // buttonVoltar
             // 
-            this.buttonVoltar.Location = new System.Drawing.Point(678, 62);
+            this.buttonVoltar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonVoltar.Location = new System.Drawing.Point(717, 94);
             this.buttonVoltar.Name = "buttonVoltar";
             this.buttonVoltar.Size = new System.Drawing.Size(111, 41);
             this.buttonVoltar.TabIndex = 4;
@@ -93,14 +98,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1045, 531);
+            this.ClientSize = new System.Drawing.Size(1122, 594);
             this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.buttonRemoverProduto);
             this.Controls.Add(this.buttonPesquisarProduto);
             this.Controls.Add(this.dataGridViewGerenciamentoProduto);
             this.Controls.Add(this.label1);
             this.Name = "Gerenciamento_Produto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciamento_Produto";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGerenciamentoProduto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -38,6 +38,7 @@
             // 
             // buttonVoltar
             // 
+            this.buttonVoltar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonVoltar.Location = new System.Drawing.Point(594, 79);
             this.buttonVoltar.Name = "buttonVoltar";
             this.buttonVoltar.Size = new System.Drawing.Size(111, 41);
@@ -48,6 +49,7 @@
             // 
             // buttonRemoverCliente
             // 
+            this.buttonRemoverCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonRemoverCliente.Location = new System.Drawing.Point(396, 79);
             this.buttonRemoverCliente.Name = "buttonRemoverCliente";
             this.buttonRemoverCliente.Size = new System.Drawing.Size(111, 41);
@@ -58,6 +60,7 @@
             // 
             // buttonPesquisarCliente
             // 
+            this.buttonPesquisarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonPesquisarCliente.Location = new System.Drawing.Point(209, 79);
             this.buttonPesquisarCliente.Name = "buttonPesquisarCliente";
             this.buttonPesquisarCliente.Size = new System.Drawing.Size(111, 41);
@@ -68,21 +71,23 @@
             // 
             // dataGridViewGerenciamentoCliente
             // 
+            this.dataGridViewGerenciamentoCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridViewGerenciamentoCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewGerenciamentoCliente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewGerenciamentoCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewGerenciamentoCliente.Location = new System.Drawing.Point(72, 126);
             this.dataGridViewGerenciamentoCliente.Name = "dataGridViewGerenciamentoCliente";
             this.dataGridViewGerenciamentoCliente.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridViewGerenciamentoCliente.Size = new System.Drawing.Size(787, 443);
+            this.dataGridViewGerenciamentoCliente.Size = new System.Drawing.Size(997, 466);
             this.dataGridViewGerenciamentoCliente.TabIndex = 6;
             this.dataGridViewGerenciamentoCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGerenciamentoCliente_CellContentClick);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(252, 28);
+            this.label1.Location = new System.Drawing.Point(265, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(386, 37);
             this.label1.TabIndex = 5;
@@ -93,14 +98,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(958, 599);
+            this.ClientSize = new System.Drawing.Size(1121, 630);
             this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.buttonRemoverCliente);
             this.Controls.Add(this.buttonPesquisarCliente);
             this.Controls.Add(this.dataGridViewGerenciamentoCliente);
             this.Controls.Add(this.label1);
             this.Name = "Gerenciamento_Cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciamento_Cliente";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGerenciamentoCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
