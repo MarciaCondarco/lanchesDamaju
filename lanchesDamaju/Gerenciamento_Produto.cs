@@ -20,26 +20,23 @@ namespace lanchesDamaju
 
         private void buttonPesquisarProduto_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=srv1438.hstgr.io; Port=3306; Database=u289366797_db_damaju; Uid=u289366797_Damaju; Pwd=Damaju123&;";
+            using (MySqlConnection conexao = ConexaoBanco.ObterConexao())
 
-            try
-            {
-                //Cria uma conexão com o banco de dados MySql
-                using (MySqlConnection consulta = new MySqlConnection(connectionString))
-                {
-                    //Abre a conexão 
-                    consulta.Open();
+                try
+                    {
+                    conexao.Open();
+                    //Abre a conexão
 
-                    //Consulta SQL para selecionar os clientes 
-                    string listagem = "SELECT * FROM tb_produtos";
+                    string query = "SELECT * FROM tb_produtos";
+                    //Consulta SQL para selecionar os clientes
 
-
-                    //Cria o comando MySql 
-                    using (MySqlCommand cmd = new MySqlCommand(listagem, consulta))
+                    using (MySqlCommand cmd = new MySqlCommand(query, conexao))
+                    //Cria o comando MySql
                     {
 
-                        //Executa a consulta e obtém os resultados 
-                        MySqlDataReader reader = cmd.ExecuteReader();
+                        //Cria o comando MySql 
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
 
                         //Cria uma lista para armazenar os registros 
                         DataTable dadosProduto = new DataTable();
@@ -68,20 +65,19 @@ namespace lanchesDamaju
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=srv1438.hstgr.io; Port=3306; Database=u289366797_db_damaju; Uid=u289366797_Damaju; Pwd=Damaju123&;";
+                    using (MySqlConnection conexao = ConexaoBanco.ObterConexao())
 
-                    try
-                    {
-                        //Cria uma conexão com o banco de dados MySql
-                        using (MySqlConnection consulta = new MySqlConnection(connectionString))
+                        try
                         {
-                            //Abre a conexão 
-                            consulta.Open();
+                            conexao.Open();
+                            //Abre a conexão
 
-                            //Consulta SQL para selecionar os clientes 
-                            string listagem = "DELETE FROM tb_produtos WHERE id_produtos = @id_produtos";
+                            string query = "DELETE FROM tb_produtos WHERE id_produtos = @id_produtos";
+                            //Consulta SQL para selecionar os clientes
 
-                            using (MySqlCommand cmd = new MySqlCommand(listagem, consulta))
+                            using (MySqlCommand cmd = new MySqlCommand(query, conexao))
+                            //Cria o comando MySql
+
                             {
                                 cmd.Parameters.AddWithValue("id_produtos", produtoID);
 
@@ -95,7 +91,6 @@ namespace lanchesDamaju
                                     MessageBox.Show("Falha ao excluir o produto");
 
                                 }
-                            }
                         }
                     }
                     catch (Exception ex)

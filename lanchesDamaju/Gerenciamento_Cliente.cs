@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace lanchesDamaju
 {
@@ -20,25 +21,12 @@ namespace lanchesDamaju
 
         private void buttonPesquisarCliente_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=srv1438.hstgr.io; Port=3306; Database=u289366797_db_damaju; Uid=u289366797_Damaju; Pwd=Damaju123&; convert zero datetime=True";
-
-            try
-            {
-                //Cria uma conexão com o banco de dados MySql
-                using (MySqlConnection consulta = new MySqlConnection(connectionString))
+            using (MySqlConnection conexao = ConexaoBanco.ObterConexao())
+                try
                 {
-                    //Abre a conexão 
-                    consulta.Open();
-
-                    //Consulta SQL para selecionar os clientes 
-                    string listagem = "SELECT id, nome,email,nascimento, cep, cpf, telefone FROM tb_pessoa";
-                        
-                        
-                        //" id_cliente, nome, senha, email, cep, cpf, numero, telefone FROM tb_cliente";
-
-
-                    //Cria o comando MySql 
-                    using (MySqlCommand cmd = new MySqlCommand(listagem, consulta))
+                    conexao.Open();
+                    string query = "SELECT id, nome,email,nascimento, cep, cpf, telefone FROM tb_pessoa";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conexao))
                     {
 
                         //Executa a consulta e obtém os resultados 
@@ -51,9 +39,9 @@ namespace lanchesDamaju
 
                         //Atribui a tabela de dados ao DataGridView
                         dataGridViewGerenciamentoCliente.DataSource = dadosCliente;
+                    
                     }
                 }
-            }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao listar os Clientes: " + ex.Message);
@@ -71,19 +59,13 @@ namespace lanchesDamaju
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=srv1438.hstgr.io; Port=3306; Database=u289366797_db_damaju; Uid=u289366797_Damaju; Pwd=Damaju123&;";
-
-                    try
-                    {
-                        // Cria uma conexão com o banco de dados MySQL
-                        using (MySqlConnection consulta = new MySqlConnection(connectionString))
-                        {
-                            consulta.Open();
-
-                            // Primeiro, vamos excluir os registros da tabela tb_usuario que fazem referência ao cliente
-                            string excluirUsuarios = "DELETE FROM tb_usuario WHERE id_pessoa = @id_pessoa";
-
-                            using (MySqlCommand cmdExcluirUsuarios = new MySqlCommand(excluirUsuarios, consulta))
+                    using (MySqlConnection conexao = ConexaoBanco.ObterConexao())
+                       try
+                       {
+                            conexao.Open();
+                            // Primeiro, vamos excluir os registros da tabela tb_usuario que fazem referência ao client
+                            string query = "DELETE FROM tb_usuario WHERE id_pessoa = @id_pessoa";
+                            using (MySqlCommand cmdExcluirUsuarios = new MySqlCommand(query, conexao))
                             {
                                 cmdExcluirUsuarios.Parameters.AddWithValue("@id_pessoa", clienteID);
                                 int usuarioRowsAffected = cmdExcluirUsuarios.ExecuteNonQuery();
@@ -98,7 +80,7 @@ namespace lanchesDamaju
                             // Agora, vamos excluir o registro de tb_pessoa
                             string excluirPessoa = "DELETE FROM tb_pessoa WHERE id = @id_pessoa";
 
-                            using (MySqlCommand cmdExcluirPessoa = new MySqlCommand(excluirPessoa, consulta))
+                            using (MySqlCommand cmdExcluirPessoa = new MySqlCommand(excluirPessoa, conexao))
                             {
                                 cmdExcluirPessoa.Parameters.AddWithValue("@id_pessoa", clienteID);
                                 int pessoaRowsAffected = cmdExcluirPessoa.ExecuteNonQuery();
@@ -112,8 +94,8 @@ namespace lanchesDamaju
                                     MessageBox.Show("Falha ao excluir o Cliente.");
                                 }
                             }
-                        }
-                    }
+                       
+                       }
                     catch (Exception ex)
                     {
                         MessageBox.Show("Erro: " + ex.Message);
