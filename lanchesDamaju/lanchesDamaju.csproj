@@ -138,6 +138,7 @@
     <Compile Include="Cad_Produto.Designer.cs">
       <DependentUpon>Cad_Produto.cs</DependentUpon>
     </Compile>
+    <Compile Include="conexaoBanco-exemplo.cs" />
     <Compile Include="conexaoBanco.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
